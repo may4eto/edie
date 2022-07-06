@@ -1,0 +1,274 @@
+:root {
+  /* colors */
+  --black: #333333;
+  --blue: #2d9cdb;
+  --red: #eb5757;
+  --green: #27ae60;
+  --lightgrey: #f2f2f2;
+  --mediumgrey: #e0e0e0;
+  --darkgrey: #828282;
+  /* font sizes */
+  --text-small: 14px;
+  --text-body: 16px;
+  --text-medium: 18px;
+  --text-large: 24px;
+  --heading-small: 24px;
+  --heading-medium: 36px;
+  --heading-large: 48px;
+  /* font weights */
+  --light: 300;
+  --regular: 400;
+  --medium: 500;
+  --bold: 700;
+  --black: 800;
+}
+
+body {
+  font-family: "Poppins";
+  font-size: var(--text-body);
+  font-weight: var(--regular);
+  line-height: 1.5;
+  color: var(--black);
+  padding: 56px;
+}
+
+h1,
+.h1 {
+  font-size: var(--heading-large);
+  font-weight: var(--medium);
+  line-height: 1.25;
+}
+
+h1 {
+  margin-top: 0;
+  grid-column: 3/8;
+}
+
+h2 {
+  margin: 40px 0 16px 0;
+  grid-column: 3/7;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 96px;
+}
+
+nav a {
+  color: var(--black);
+  text-decoration: none;
+  font-size: var(--text-large);
+  font-weight: var(--medium);
+  margin-left: 40px;
+  line-height: 1;
+}
+
+nav a.logo {
+  font-family: "Heebo";
+  font-weight: var(--black);
+  font-size: var(--heading-medium);
+  margin-left: 0;
+}
+
+header,
+section {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 24px;
+}
+
+header img {
+  width: 100%;
+  grid-column: 1/13;
+}
+
+header p {
+  color: var(--blue);
+  grid-column: 3/8;
+  margin-bottom: 0;
+}
+
+section {
+  margin-bottom: 200px;
+}
+
+section h3 {
+  grid-column: 2/6;
+  font-size: var(--heading-medium);
+  font-weight: var(--medium);
+}
+
+section.contact p,
+section.contact form {
+  grid-column: 3/7;
+  margin: 0 0 16px 0;
+}
+
+.input {
+  position: relative;
+}
+
+.label {
+  margin-bottom: 8px;
+}
+
+form label {
+  font-size: var(--text-small);
+  color: var(--darkgrey);
+}
+
+.input input {
+  width: 100%;
+  height: 56px;
+  border-radius: 12px;
+  background-color: var(--lightgrey);
+  border: none;
+  padding-left: 16px;
+  box-sizing: border-box;
+}
+
+.input input[placeholder] {
+  font-size: var(--text-medium);
+  font-weight: var(--text-medium);
+}
+
+.input button {
+  position: absolute;
+  top: 0;
+  right: -4px;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  height: 100%;
+  background-color: var(--blue);
+  color: #fff;
+  border: none;
+  padding: 16px 32px;
+  border-radius: 12px;
+  font-size: var(--text-medium);
+  font-weight: var(--medium);
+  cursor: pointer;
+}
+
+.cards-wrapper {
+  grid-column: 2/12;
+  display: flex;
+  justify-content: space-between;
+}
+
+section.services .card {
+  padding: 48px 32px;
+  border-radius: 24px;
+}
+
+section.services .card:hover {
+  box-shadow: 0px 10px 30px rgba(51, 51, 51, 0.1);
+}
+
+section.services .card:hover .button {
+  background-color: var(--blue);
+  color: #fff;
+}
+
+section.services .card h4 {
+  font-size: var(--heading-small);
+  font-weight: var(--bold);
+}
+
+.card p {
+  margin-bottom: 32px;
+}
+
+section.services .card span {
+  display: inline-block;
+  padding: 20px;
+  border-radius: 16px;
+  color: #fff;
+}
+
+section.services .card .button {
+  color: #fff;
+  background-color: var(--mediumgrey);
+  color: var(--darkgrey);
+  padding: 8px 16px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-size: var(--text-body);
+  font-weight: var(--medium);
+}
+
+section.services .card:not(:first-child) {
+  margin-left: 24px;
+}
+
+section.services #card1 span {
+  background-color: var(--blue);
+}
+
+section.services #card2 span {
+  background-color: var(--green);
+}
+
+section.services #card3 span {
+  background-color: var(--red);
+}
+
+section.work {
+  gap: 48px 24px;
+  justify-items: end;
+}
+
+section.work h3 {
+  margin: 0;
+}
+
+section.work a {
+  display: block;
+  text-decoration: none;
+  color: var(--blue);
+  font-size: var(--text-large);
+  font-weight: var(--medium);
+  grid-column: 10/12;
+}
+
+section.work a span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+section.work .card:nth-child(2n) {
+  transform: translateY(25%);
+}
+
+section.work .card img {
+  display: block;
+  border-radius: 24px;
+  width: 529px;
+  height: 529px;
+}
+
+section.work .card h4 {
+  font-size: var(--heading-small);
+  font-weight: var(--medium);
+  margin-top: 8px;
+}
+
+section.work .card p {
+  font-size: var(--text-small);
+  font-weight: var(--light);
+  color: var(--darkgrey);
+  margin-bottom: 0;
+}
+
+section.work #card1,
+section.work #card3 {
+  grid-column: 2/7;
+}
+
+section.work #card2,
+section.work #card4 {
+  grid-column: 7/12;
+}
