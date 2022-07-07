@@ -192,4 +192,18 @@
       </p>
     </footer>
   </body>
+  <script>
+    const hamburderMenu = document.querySelector(".hamburger");
+    const mobileNav = document.querySelector(".nav-links");
+    hamburderMenu.addEventListener("click", function () {
+      mobileNav.classList.toggle("open");
+      if (mobileNav.classList.contains("open")) {
+        hamburderMenu.innerHTML =
+          "<span class='hamburger material-symbols-rounded'>close</span>";
+      } else {
+        hamburderMenu.innerHTML =
+          "<span class='hamburger material-symbols-rounded'>menu</span>";
+      }
+    });
+  </script>
 </html>
