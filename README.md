@@ -8,7 +8,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="https://may4eto.github.io/edie-homepage/">
       Demo
     </a>
     <span> | </span>
