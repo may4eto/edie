@@ -78,7 +78,7 @@ nav a {
   line-height: 1;
 }
 
-nav a:hover {
+nav a:not(nav a.logo):hover {
   color: var(--blue);
 }
 

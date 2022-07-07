@@ -86,6 +86,6 @@ $ npm start
 
 ## Contact
 
-- Website [your-website.com](https://www.linkedin.com/in/mayamircheva/)
-- GitHub [@your-username](https://github.com/may4eto/edie-homepage)
-- Twitter [@your-twitter](https://twitter.com/maycheto)
+- Website [Linkedin](https://www.linkedin.com/in/mayamircheva/)
+- GitHub [@may4eto](https://github.com/may4eto/edie-homepage)
+- Twitter [@maycheto](https://twitter.com/maycheto)
