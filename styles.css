@@ -406,11 +406,9 @@ section.clients .client h5 {
 }
 
 footer {
-  width: 100vw;
   color: #fff;
   background-color: var(--black);
   padding-top: 48px;
-  box-sizing: border-box;
 }
 
 footer nav {
@@ -466,6 +464,7 @@ footer p a {
   color: #fff;
 }
 
+/*responsive styles*/
 @media (max-width: 1300px) {
   section h3,
   header h1,
@@ -476,7 +475,6 @@ footer p a {
     grid-column: 2/10;
   }
 }
-
 @media (max-width: 1165px) {
   section h3,
   header h1,
