@@ -715,8 +715,11 @@ footer p a {
     font-size: var(--heading-small);
   }
   header h5,
-  section.contact p,
   section.contact form label {
     font-size: var(--text-extrasmall);
+  }
+
+  section.contact p {
+    font-size: var(--text-small);
   }
 }
