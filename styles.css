@@ -42,6 +42,7 @@ body {
   font-weight: var(--regular);
   line-height: 1.5;
   color: var(--thick);
+  margin: 0;
 }
 
 h1,
@@ -75,6 +76,13 @@ nav {
   align-items: center;
   margin-bottom: 96px;
   padding: 40px 56px;
+}
+
+nav.top-nav {
+  position: fixed;
+  background-color: #fff;
+  width: 90%;
+  z-index: 100;
 }
 
 nav span.hamburger {
@@ -126,9 +134,12 @@ header h5 {
   font-size: var(--text-medium);
 }
 
-main,
 footer {
   padding: 0 56px;
+}
+
+main {
+  padding: 96px 56px 0 56px;
 }
 
 section {
@@ -605,7 +616,7 @@ footer p a {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 48px;
+    padding: 24px;
     box-sizing: border-box;
     background: #fff;
     z-index: 1;
@@ -636,9 +647,11 @@ footer p a {
     padding: 24px 40px;
     margin-bottom: 48px;
   }
-  main,
   footer {
     padding: 24px 40px;
+  }
+  main {
+    padding: 80px 40px 24px 40px;
   }
   section.services .cards-wrapper {
     grid-column: 2/12;
@@ -654,9 +667,11 @@ footer p a {
     padding: 16px 24px;
     margin-bottom: 16px;
   }
-  main,
   footer {
     padding: 16px 24px;
+  }
+  main {
+    padding: 80px 24px 16px 24px;
   }
   section {
     margin-bottom: 48px;
