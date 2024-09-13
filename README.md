@@ -8,11 +8,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://may4eto.github.io/edie-homepage/">
+    <a href="https://may4eto.github.io/edie/">
       Demo
     </a>
     <span> | </span>
-    <a href="https://github.com/may4eto/edie-homepage">
+    <a href="https://github.com/may4eto/edie">
       Solution
     </a>
     <span> | </span>
